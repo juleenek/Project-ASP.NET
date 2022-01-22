@@ -22,8 +22,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                     </ul>
-                    <button class="btn"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="LoginUser">Zaloguj się</a></button>
-                    <button class="btn"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RegisterUser">Zarejestruj się</a></button>
+                    <partial name="_LoginPartial.cshtml">
                 </div>
             </div>
         </nav>

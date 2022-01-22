@@ -61,7 +61,7 @@ namespace CentrumAdopcyjneZwierzat
             app.UseRouting();
             app.UseSession();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseStatusCodePages();

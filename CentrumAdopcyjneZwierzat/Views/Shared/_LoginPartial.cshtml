@@ -1,0 +1,27 @@
+﻿@using CentrumAdopcyjneZwierzat.Models.User
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+        </li>
+        <li class="nav-item">
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button asp-action="Logout" asp-controller="Account" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <button class="btn"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="LoginUser">Zaloguj się</a></button>
+        </li>
+        <li class="nav-item">
+            <button class="btn"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RegisterUser">Zarejestruj się</a></button>
+        </li>
+    }
+</ul>

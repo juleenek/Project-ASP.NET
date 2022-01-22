@@ -148,3 +148,4 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.Views.pdb
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.csproj.CopyComplete
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.genruntimeconfig.cache
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
