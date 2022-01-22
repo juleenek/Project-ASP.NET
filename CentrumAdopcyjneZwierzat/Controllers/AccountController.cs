@@ -92,7 +92,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
             if (ModelState.IsValid)
             {
                 ApplicationUser user = await
-               _userManager.FindByNameAsync(loginModel.Email);
+               _userManager.FindByNameAsync(loginModel.UserName);
                 if (user != null)
                 {
                     await _signInManager.SignOutAsync();

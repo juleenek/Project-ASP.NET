@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\Code\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj": {}
+    "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\Code\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj": {
+    "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Code\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj",
         "projectName": "CentrumAdopcyjneZwierzat",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\Code\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj",
         "packagesPath": "C:\\Users\\julialinek\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\Code\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julialinek\\AppData\\Roaming\\NuGet\\NuGet.Config",
