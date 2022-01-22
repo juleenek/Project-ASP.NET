@@ -1,0 +1,23 @@
+﻿@model CentrumAdopcyjneZwierzat.Models.User.LoginUserModel
+@{
+}
+<div>
+    <form asp-action="Email" asp-controller="Account" method="post">
+        <div class="mb-3">
+            <span class="text-danger" asp-validation-for="Email"></span>
+            <label asp-for="Email">Email: </label>
+            <input class="form-control w-25" type="text" asp-for="Email" />
+        </div>
+        <div class="mb-3">
+            <span class="text-danger" asp-validation-for="Password"></span>
+            <label asp-for="Password">Hasło: </label>
+            <input class="form-control w-25" type="password" asp-for="Password" />
+        </div>
+        <div>
+            <input type="hidden" asp-for="ReturnUrl" value=@Model.ReturnUrl />
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit" asp-action="LoginUser">Loguj</button>
+        </div>
+    </form>
+</div>

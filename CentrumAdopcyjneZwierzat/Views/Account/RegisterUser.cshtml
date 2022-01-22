@@ -1,0 +1,89 @@
+﻿@model CentrumAdopcyjneZwierzat.Models.User.RegisterUserModel
+@{
+    ViewData["Title"] = "RegisterUser";
+}
+
+<h1>Rejestracja</h1>
+
+<form asp-action="RegisterUser" method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="UserName">Twój login</label>
+        <div>
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="UserName" />
+    </div>
+    <div>
+        <label asp-for="Email">Twój Email</label>
+        <div>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="email" asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Phone">Numer telefone</label>
+        <div>
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="Phone" />
+    </div>
+    <div>
+        <label asp-for="FirstName">Twoje imię</label>
+        <div>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="FirstName" />
+    </div>
+    <div>
+        <label asp-for="LastName">Twoje Nazwisko</label>
+        <div>
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="LastName" />
+    </div>
+    <div>
+        <label asp-for="StreetAddress">Adres</label>
+        <div>
+            <span asp-validation-for="StreetAddress" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="StreetAddress" />
+    </div>
+    <div>
+        <label asp-for="City">Miasto</label>
+        <div>
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="City" />
+    </div>
+    <div>
+        <label asp-for="PostalCode">Kod pocztowy</label>
+        <div>
+            <span asp-validation-for="PostalCode" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="text" asp-for="PostalCode" />
+    </div>
+    <div>
+        <label asp-for="Password">Twoje hasło</label>
+        <div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="password" asp-for="Password" />
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword">Powtórz hasło</label>
+        <div>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <input class="form-control w-25" type="password" asp-for="ConfirmPassword" />
+    </div>
+    <div class="w-20 btn-group mt-4">
+        <input class="form-control btn-primary" type="submit" value="Wyślij" />
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
