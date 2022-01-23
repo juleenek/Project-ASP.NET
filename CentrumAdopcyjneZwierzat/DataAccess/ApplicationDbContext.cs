@@ -15,6 +15,7 @@ namespace CentrumAdopcyjneZwierzat.DataAccess
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Dog> Dogs { get; set; }
         public DbSet<Box> Boxes { get; set; }
         public DbSet<Volunteer> Volunteers { get; set; }

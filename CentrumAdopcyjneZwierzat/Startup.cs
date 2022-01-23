@@ -1,4 +1,6 @@
 using CentrumAdopcyjneZwierzat.DataAccess;
+using CentrumAdopcyjneZwierzat.DataAccess.Repositories;
+using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
 using CentrumAdopcyjneZwierzat.Models.User;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +35,7 @@ namespace CentrumAdopcyjneZwierzat
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddHttpContextAccessor();
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration["Data:CentrumAdopcyjneZwierzat:ConnectionString"]));
@@ -41,6 +44,9 @@ namespace CentrumAdopcyjneZwierzat
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
+
+            services.AddScoped<IUsersListRepository, UsersListRepository>();
+            services.AddScoped<IRepositoryBase<ApplicationUser>, UsersListRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
