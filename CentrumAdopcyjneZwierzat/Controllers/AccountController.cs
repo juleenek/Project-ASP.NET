@@ -52,6 +52,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
 
                 if (result.Succeeded)
                 {
+                    _userManager.AddToRoleAsync(user, "User").Wait();
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
                     return RedirectToAction("index", "Home");
@@ -59,10 +60,15 @@ namespace CentrumAdopcyjneZwierzat.Controllers
 
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    if (error.Code == "DuplicateUserName")
+                    {
+                        ModelState.AddModelError("", "Ta nazwa użytkownika jest już zajęta.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
                 }
-
-                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
 
             }
             return View(model);
