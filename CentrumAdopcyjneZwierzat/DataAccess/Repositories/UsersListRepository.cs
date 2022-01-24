@@ -26,9 +26,9 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             throw new NotImplementedException();
         }
 
-        public bool Delete(ApplicationUser item)
+        public bool Delete(string id)
         {
-            _context.ApplicationUsers.Remove(item);
+            _context.ApplicationUsers.Remove(FindById(id));
             return Save();
         }
 
@@ -44,6 +44,12 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             return applicationUser;
         }
 
+        public bool IsExists(string id)
+        {
+            var exists = _context.ApplicationUsers.Any(q => q.Id == id); // q - any object in ApplicationUsers collection 
+            return exists;
+        }
+
         public bool Save()
         {
             var changes = _context.SaveChanges();
@@ -55,5 +61,6 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             _context.ApplicationUsers.Update(item);
             return Save();
         }
+
     }
 }
