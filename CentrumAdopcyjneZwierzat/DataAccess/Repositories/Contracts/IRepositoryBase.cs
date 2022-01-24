@@ -8,7 +8,7 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
     public interface IRepositoryBase<T> where T : class
     {
         ICollection<T> FindAll();
-        bool Delete(T item);
+        bool Delete(string item);
         bool Add(T item);
         bool Update(T item);
         bool Save();

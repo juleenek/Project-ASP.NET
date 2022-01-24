@@ -1,0 +1,25 @@
+﻿@model CentrumAdopcyjneZwierzat.Models.User.ApplicationUser
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container-fluid m-3">
+    <form method="post" asp-action="Edit" asp-controller="Admin">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3">
+            <label asp-for="UserName" class="control-label">Username</label>
+            <span asp-validation-for="UserName" class="text-danger"></span>
+            <input class="form-control" asp-for="UserName" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="FirstName" class="control-label">Firstname</label>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+            <input class="form-control" asp-for="FirstName" />
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" value="Save" class="btn btn-primary" asp-action="Edit">Zapisz</button>
+        </div>
+    </form>
+</div>

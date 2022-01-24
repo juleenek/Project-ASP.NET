@@ -11,20 +11,20 @@
         <tr>
             <td>@item.UserName</td>
             <td>@item.Email</td>
-            @*<td>
-                <a asp-controller="Blog"
+            <td>
+                @*<a asp-controller="Admin"
                    asp-action="Edit"
                    asp-route-id="@item.Id"
-                   class="btn btn-primary">Edytuj</a>
-                <a asp-controller="Blog"
+                   class="btn btn-primary">Edytuj</a>*@
+                <a asp-controller="Admin"
                    asp-action="Delete"
                    asp-route-id="@item.Id"
                    class="btn btn-danger">Usuń</a>
-                <a asp-controller="Blog"
+                <a asp-controller="Admin"
                    asp-action="Details"
                    asp-route-id="@item.Id"
                    class="btn btn-primary">Szczegóły</a>
-            </td>*@
+            </td>
         </tr>
     }
 
