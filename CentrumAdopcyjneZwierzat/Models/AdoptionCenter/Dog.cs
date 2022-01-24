@@ -12,7 +12,6 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
 {
     public class Dog
     {
-        [HiddenInput]
         [Key]
         [Required(ErrorMessage = "Podaj id psa.")]
         [DisplayName("Dogs Id")]
@@ -35,17 +34,15 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         [DisplayName("Dogs Volunteer")]
         public int VolunteerId { get; set; } // Jeden do wielu
     }
-
     public enum Breed
     {
-        [Display(Name ="Samiec")] Male,
-        [Display(Name = "Samica")] Female
+        [Display(Name = "Rasowy")] Rasowy,
+        [Display(Name = "Kundel")] Kundel
     }
-
     public enum Weight
     {
-        [Display(Name = "Mały")] Small,
-        [Display(Name = "Średni")] Medium,
-        [Display(Name = "Duży")] Big
+        [Display(Name = "Mały")] Mały,
+        [Display(Name = "Średni")] Średni,
+        [Display(Name = "Duży")] Duży
     }
 }

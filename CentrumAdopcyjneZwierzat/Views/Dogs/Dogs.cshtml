@@ -1,4 +1,9 @@
 ﻿@model IEnumerable<CentrumAdopcyjneZwierzat.Models.AdoptionCenter.Dog>
+@using Microsoft.AspNetCore.Identity
+@using CentrumAdopcyjneZwierzat.Models.User
+@using CentrumAdopcyjneZwierzat.Models.AdoptionCenter
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 @{
     ViewData["Title"] = "Dogs";
@@ -7,12 +12,19 @@
 
 <h1>Dogs</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+{
+    <p>
+        <a asp-action="Create" asp-controller="Dogs">Create New</a>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DogId)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.DogName)
             </th>
@@ -35,32 +47,40 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DogName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Breed)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Weight)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DogBirthYear)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VolunteerId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DogId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DogId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DogId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DogId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DogName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Breed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DogBirthYear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VolunteerId)
+                </td>
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.DogId">Edit</a>|
+                        <a asp-action="Details" asp-route-id="@item.DogId">Details</a>|
+                        <a asp-action="Delete" asp-route-id="@item.DogId">Delete</a>
+                    </td>
+                }
+
+            </tr>
+        }
     </tbody>
 </table>

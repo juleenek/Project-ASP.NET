@@ -149,7 +149,6 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.csproj.CopyComplete
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.genruntimeconfig.cache
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Admin\UsersList.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
@@ -224,6 +223,8 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Admin\Edit.cshtml.g.cs
-\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Dogs.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Create.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\Details.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\Edit.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\UsersList.cshtml.g.cs

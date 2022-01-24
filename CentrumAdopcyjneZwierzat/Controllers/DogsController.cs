@@ -1,6 +1,7 @@
 ﻿using CentrumAdopcyjneZwierzat.DataAccess.Repositories;
 using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
 using CentrumAdopcyjneZwierzat.Models.AdoptionCenter;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,13 @@ namespace CentrumAdopcyjneZwierzat.Controllers
     public class DogsController : Controller
     {
         private IDogsRepository _repo;
-        public DogsController(IDogsRepository repo)
+        //private readonly UserManager<Dog> _userManager;
+        //private readonly SignInManager<Dog> _signInManager;
+        public DogsController(IDogsRepository repo)/*, UserManager<Dog> userManager, SignInManager<Dog> signInManager)*/
         {
             _repo = repo;
+            //_userManager = userManager;
+            //_signInManager = signInManager;
         }
 
         public ActionResult Dogs()
@@ -34,16 +39,20 @@ namespace CentrumAdopcyjneZwierzat.Controllers
             }
             return NotFound();
         }
-        public IActionResult Create(Dog item)
+        public IActionResult Create()
+        {
+                return View();
+        }
+        public IActionResult CreateDog(Dog item)
         {
             if (ModelState.IsValid)
             {
                 _repo.Add(item);
-                return View("Dogs", item);
+                return View("Dogs", _repo.FindAll());
             }
             else
             {
-                return View("AddDDog");
+                return View("Create");
             }
 
         }
@@ -76,14 +85,14 @@ namespace CentrumAdopcyjneZwierzat.Controllers
                 return View(model);
             }
 
-            return View("UsersList", RedirectToAction(nameof(Edit)));
+            return View("Dogs", RedirectToAction(nameof(Edit)));
 
 
         }
         public ActionResult Delete(string id)
         {
             _repo.Delete(id);
-            return View("UsersList", _repo.FindAll());
+            return View("Dogs", _repo.FindAll());
 
         }
     }
