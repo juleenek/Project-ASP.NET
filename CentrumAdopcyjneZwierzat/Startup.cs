@@ -1,6 +1,7 @@
 using CentrumAdopcyjneZwierzat.DataAccess;
 using CentrumAdopcyjneZwierzat.DataAccess.Repositories;
 using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
+using CentrumAdopcyjneZwierzat.Models.AdoptionCenter;
 using CentrumAdopcyjneZwierzat.Models.User;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -45,8 +46,15 @@ namespace CentrumAdopcyjneZwierzat
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
+            // Application Users
+
             services.AddScoped<IUsersListRepository, UsersListRepository>();
             services.AddScoped<IRepositoryBase<ApplicationUser>, UsersListRepository>();
+
+            // Dogs
+
+            services.AddScoped<IDogsRepository, DogsRepository>();
+            services.AddScoped<IRepositoryBase<Dog>, DogsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

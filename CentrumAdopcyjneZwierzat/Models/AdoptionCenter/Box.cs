@@ -15,7 +15,8 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         }
         [HiddenInput]
         [Key]
-        public int BoxId { get; set; }
+        [Required(ErrorMessage = "Podaj id placówki.")]
+        public string BoxId { get; set; }
         public string BoxName { get; set; }
         public string BoxAddress { get; set; }
         public ICollection<Dog> Dogs { get; set; } // Jeden do wielu

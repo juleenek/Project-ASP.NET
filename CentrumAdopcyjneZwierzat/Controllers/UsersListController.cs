@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace CentrumAdopcyjneZwierzat.Controllers
 {
-    public class AdminController : Controller
+    public class UsersListController : Controller
     {
         private IUsersListRepository _repo;
-        public AdminController(IUsersListRepository repo)
+        public UsersListController(IUsersListRepository repo)
         {
             _repo = repo;
         }
@@ -35,26 +35,6 @@ namespace CentrumAdopcyjneZwierzat.Controllers
             return NotFound();
         }
 
-        //// GET: AdminController/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
-
-        //// POST: AdminController/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
         //public ActionResult Edit(string id)
         //{
         //    if (!_repo.IsExists(id))

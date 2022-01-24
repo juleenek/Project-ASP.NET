@@ -9,7 +9,6 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts
     public interface IUsersListRepository : IRepositoryBase<ApplicationUser>
     {
         void AddVolunteerAsUser(string firstId, string secondId);
-        bool IsExists(string id);
-        ApplicationUser FindById(string id);
+        
     }
 }

@@ -226,3 +226,4 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Admin\Edit.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Dogs.cshtml.g.cs
