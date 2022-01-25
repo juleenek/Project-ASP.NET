@@ -55,6 +55,11 @@ namespace CentrumAdopcyjneZwierzat
 
             services.AddScoped<IDogsRepository, DogsRepository>();
             services.AddScoped<IRepositoryBase<Dog>, DogsRepository>();
+
+            // Volunteers
+
+            services.AddScoped<IVolunteerRepository, VolunteerRepository>();
+            services.AddScoped<IRepositoryBase<Volunteer>, VolunteerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

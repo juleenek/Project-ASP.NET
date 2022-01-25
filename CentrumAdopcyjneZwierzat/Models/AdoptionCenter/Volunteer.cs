@@ -14,7 +14,6 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         {
            Boxes = new HashSet<Box>();
         }
-        [HiddenInput]
         [Key]
         [Required(ErrorMessage = "Podaj id wolontariusza.")]
         [DisplayName("Volunteer Id")]

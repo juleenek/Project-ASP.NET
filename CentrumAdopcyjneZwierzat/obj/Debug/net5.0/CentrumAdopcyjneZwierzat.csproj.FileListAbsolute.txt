@@ -230,3 +230,7 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\UsersList.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Edit.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Details.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Volunteers\Create.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Volunteers\Details.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Volunteers\Edit.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Volunteers\Volunteers.cshtml.g.cs
