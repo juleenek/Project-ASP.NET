@@ -229,3 +229,4 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\Edit.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\UsersList\UsersList.cshtml.g.cs
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Edit.cshtml.g.cs
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat\obj\Debug\net5.0\Razor\Views\Dogs\Details.cshtml.g.cs

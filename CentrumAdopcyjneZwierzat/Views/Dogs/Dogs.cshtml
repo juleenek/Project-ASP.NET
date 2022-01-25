@@ -71,14 +71,17 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.VolunteerId)
                 </td>
-                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
-                {
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.DogId">Edit</a>|
-                        <a asp-action="Details" asp-route-id="@item.DogId">Details</a>|
-                        <a asp-action="Delete" asp-route-id="@item.DogId">Delete</a>
-                    </td>
-                }
+                
+                
+                <td>
+                    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+                    {
+                        <a class="mr-1" asp-action="Edit" asp-route-id="@item.DogId">Edit</a>
+                        <a class="mr-1" asp-action="Delete" asp-route-id="@item.DogId">Delete</a>
+                    }
+                        <a asp-action="Details" asp-route-id="@item.DogId">Details</a>
+                </td>
+                
 
             </tr>
         }

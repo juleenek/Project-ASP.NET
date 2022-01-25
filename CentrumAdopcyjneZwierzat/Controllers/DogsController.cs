@@ -1,6 +1,7 @@
 ﻿using CentrumAdopcyjneZwierzat.DataAccess.Repositories;
 using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
 using CentrumAdopcyjneZwierzat.Models.AdoptionCenter;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,13 +14,10 @@ namespace CentrumAdopcyjneZwierzat.Controllers
     public class DogsController : Controller
     {
         private IDogsRepository _repo;
-        //private readonly UserManager<Dog> _userManager;
-        //private readonly SignInManager<Dog> _signInManager;
-        public DogsController(IDogsRepository repo)/*, UserManager<Dog> userManager, SignInManager<Dog> signInManager)*/
+
+        public DogsController(IDogsRepository repo)
         {
             _repo = repo;
-            //_userManager = userManager;
-            //_signInManager = signInManager;
         }
 
         public ActionResult Dogs()
@@ -47,6 +45,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 _repo.Add(item);
                 return View("Dogs", _repo.FindAll());
             }
@@ -72,7 +71,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
         public ActionResult Edit(Dog model)
         {
 
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) 
             {
                 return View(model);
             }
