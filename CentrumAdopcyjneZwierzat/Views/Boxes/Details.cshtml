@@ -1,0 +1,34 @@
+﻿@model CentrumAdopcyjneZwierzat.Models.AdoptionCenter.Box
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Box</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BoxId)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BoxName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BoxName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BoxAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BoxAddress)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BoxId">Edit</a> |
+    <a asp-action="Boxes">Back to List</a>
+</div>

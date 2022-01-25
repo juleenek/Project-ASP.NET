@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace CentrumAdopcyjneZwierzat.Controllers
 {
-    public class VolunteerController : Controller
+    public class BoxesController : Controller
     {
-        private IVolunteerRepository _repo;
-
-        public VolunteerController(IVolunteerRepository repo)
+        private IBoxRepository _repo;
+        public BoxesController(IBoxRepository repo)
         {
             _repo = repo;
         }
 
-        public ActionResult Volunteers()
+        public ActionResult Boxes()
         {
             return View(_repo.FindAll());
         }
@@ -26,7 +25,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
         {
             foreach (var item in _repo.FindAll())
             {
-                if (item.VolunteerId == id)
+                if (item.BoxId == id)
                 {
                     return View(item);
                 }
@@ -38,13 +37,15 @@ namespace CentrumAdopcyjneZwierzat.Controllers
         {
             return View();
         }
-        public IActionResult Create(Volunteer item)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Box item)
         {
             if (ModelState.IsValid)
             {
 
                 _repo.Add(item);
-                return View("Volunteers", _repo.FindAll());
+                return View("Boxes", _repo.FindAll());
             }
             else
             {
@@ -58,14 +59,14 @@ namespace CentrumAdopcyjneZwierzat.Controllers
             {
                 return NotFound();
             }
-            var volunteer = _repo.FindById(id);
+            var box = _repo.FindById(id);
 
-            return View("Edit", volunteer);
+            return View("Edit", box);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Volunteer model)
+        public ActionResult Edit(Box model)
         {
 
             if (!ModelState.IsValid)
@@ -81,14 +82,14 @@ namespace CentrumAdopcyjneZwierzat.Controllers
                 return View(model);
             }
 
-            return View("Volunteers", _repo.FindAll());
+            return View("Boxes", _repo.FindAll());
 
 
         }
         public ActionResult Delete(string id)
         {
             _repo.Delete(id);
-            return View("Volunteers", _repo.FindAll());
+            return View("Boxes", _repo.FindAll());
 
         }
     }

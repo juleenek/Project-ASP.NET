@@ -13,7 +13,6 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         {
             Volunteers = new HashSet<Volunteer>();
         }
-        [HiddenInput]
         [Key]
         [Required(ErrorMessage = "Podaj id placówki.")]
         public string BoxId { get; set; }
