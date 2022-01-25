@@ -13,7 +13,7 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
     public class Dog
     {
         [Key]
-        [Required(ErrorMessage = "Podaj id psa.")]
+        [HiddenInput]
         [DisplayName("Dogs Id")]
         public string DogId { get; set; }
         [DisplayName("Dogs Name")]

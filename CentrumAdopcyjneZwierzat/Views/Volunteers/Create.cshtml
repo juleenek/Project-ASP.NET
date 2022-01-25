@@ -14,11 +14,6 @@
         <form asp-action="Create" asp-controller="Volunteers" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="VolunteerId" class="control-label">Volunteer Id</label>
-                <input asp-for="VolunteerId" class="form-control" />
-                <span asp-validation-for="VolunteerId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="VolunteerFirstName" class="control-label">Volunteer First Name</label>
                 <input asp-for="VolunteerFirstName" class="form-control" />
                 <span asp-validation-for="VolunteerFirstName" class="text-danger"></span>

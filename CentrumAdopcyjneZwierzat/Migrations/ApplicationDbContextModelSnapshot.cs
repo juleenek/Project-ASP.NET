@@ -70,8 +70,8 @@ namespace CentrumAdopcyjneZwierzat.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VolunteerId")
-                        .HasColumnType("int");
+                    b.Property<string>("VolunteerId")
+                        .HasColumnType("string");
 
                     b.Property<int>("Weight")
                         .HasColumnType("int");

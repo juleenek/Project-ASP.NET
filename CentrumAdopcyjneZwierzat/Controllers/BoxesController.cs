@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace CentrumAdopcyjneZwierzat.Controllers
@@ -43,7 +44,16 @@ namespace CentrumAdopcyjneZwierzat.Controllers
         {
             if (ModelState.IsValid)
             {
-
+                StringBuilder builder = new StringBuilder();
+                Enumerable
+                   .Range(65, 26)
+                    .Select(e => ((char)e).ToString())
+                    .Concat(Enumerable.Range(97, 26).Select(e => ((char)e).ToString()))
+                    .Concat(Enumerable.Range(0, 10).Select(e => e.ToString()))
+                    .OrderBy(e => Guid.NewGuid())
+                    .Take(11)
+                    .ToList().ForEach(e => builder.Append(e));
+                item.BoxId = builder.ToString();
                 _repo.Add(item);
                 return View("Boxes", _repo.FindAll());
             }

@@ -1,4 +1,5 @@
-﻿using CentrumAdopcyjneZwierzat.Models.User;
+﻿using CentrumAdopcyjneZwierzat.Models.AdoptionCenter;
+using CentrumAdopcyjneZwierzat.Models.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace CentrumAdopcyjneZwierzat.DataAccess
 
         private static void SeedUsers(UserManager<ApplicationUser> userManager)
         {
+          
             if (userManager.FindByNameAsync("admin123").Result == null)
             {
                 var user = new ApplicationUser
@@ -31,6 +33,7 @@ namespace CentrumAdopcyjneZwierzat.DataAccess
                     PostalCode = "11-222",
                     City = "admin"
                 };
+              
                 var result = userManager.CreateAsync(user, "@dminPassword123").Result;
                 if (result.Succeeded)
                 {

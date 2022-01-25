@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IdGenerator\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

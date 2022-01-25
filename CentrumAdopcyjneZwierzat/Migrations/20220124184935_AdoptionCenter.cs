@@ -30,7 +30,7 @@ namespace CentrumAdopcyjneZwierzat.Migrations
                     Weight = table.Column<int>(type: "int", nullable: false),
                     DogBirthYear = table.Column<int>(type: "int", nullable: false),
                     BoxId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    VolunteerId = table.Column<int>(type: "int", nullable: false)
+                    VolunteerId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {

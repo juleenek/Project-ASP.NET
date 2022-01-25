@@ -1,4 +1,7 @@
-﻿using CentrumAdopcyjneZwierzat.Models;
+﻿using CentrumAdopcyjneZwierzat.DataAccess;
+using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
+using CentrumAdopcyjneZwierzat.Models;
+using CentrumAdopcyjneZwierzat.Models.AdoptionCenter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,6 +14,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
 {
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)

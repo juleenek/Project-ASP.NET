@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,11 +15,12 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
             Volunteers = new HashSet<Volunteer>();
         }
         [Key]
-        [Required(ErrorMessage = "Podaj id placówki.")]
+        [HiddenInput]
         public string BoxId { get; set; }
         public string BoxName { get; set; }
         public string BoxAddress { get; set; }
         public ICollection<Dog> Dogs { get; set; } // Jeden do wielu
         public ICollection<Volunteer> Volunteers { get; set; } // Wiele do wielu
+
     }
 }
