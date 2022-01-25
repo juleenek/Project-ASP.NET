@@ -1,0 +1,70 @@
+﻿@model CentrumAdopcyjneZwierzat.Models.AdoptionCenter.Dog
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Dog</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DogId" />
+            <div class="form-group">
+                <label asp-for="DogName" class="control-label"></label>
+                <input asp-for="DogName" class="form-control" />
+                <span asp-validation-for="DogName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <select asp-for="Gender" class="form-control">
+                    <option value="Samiec">Male</option>
+                    <option value="Samica">Female</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Breed" class="control-label"></label>
+                <select asp-for="Breed" class="form-control">
+                    <option value="Rasowy">Rasowy</option>
+                    <option value="Kundel">Kundel</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <select asp-for="Weight" class="form-control">
+                    <option value="Mały">Mały</option>
+                    <option value="Średni">Średni</option>
+                    <option value="Duży">Duży</option>
+                </select>
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DogBirthYear" class="control-label"></label>
+                <input asp-for="DogBirthYear" class="form-control" />
+                <span asp-validation-for="DogBirthYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VolunteerId" class="control-label"></label>
+                <input asp-for="VolunteerId" class="form-control" />
+                <span asp-validation-for="VolunteerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Dogs">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

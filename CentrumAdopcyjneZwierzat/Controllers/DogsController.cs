@@ -62,9 +62,9 @@ namespace CentrumAdopcyjneZwierzat.Controllers
             {
                 return NotFound();
             }
-            var user = _repo.FindById(id);
+            var dog = _repo.FindById(id);
 
-            return View(user);
+            return View("Edit", dog);
         }
 
         [HttpPost]
@@ -85,7 +85,7 @@ namespace CentrumAdopcyjneZwierzat.Controllers
                 return View(model);
             }
 
-            return View("Dogs", RedirectToAction(nameof(Edit)));
+            return View("Dogs", _repo.FindAll());
 
 
         }
