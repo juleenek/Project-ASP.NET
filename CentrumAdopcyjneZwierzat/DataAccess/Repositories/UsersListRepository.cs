@@ -56,6 +56,13 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             return changes > 0; // If changes > 0 = GOOD, else = NOT GOOD
         }
 
+        public ApplicationUser SaveUser(ApplicationUser user)
+        {
+            var entryEntity = _context.ApplicationUsers.Add(user);
+            _context.SaveChanges();
+            return entryEntity.Entity;
+        }
+
         public bool Update(ApplicationUser item)
         {
             _context.ApplicationUsers.Update(item);

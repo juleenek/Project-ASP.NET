@@ -8,5 +8,6 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts
 {
     public interface IDogsRepository : IRepositoryBase<Dog>
     {
+        Dog SaveDog(Dog dog);
     }
 }

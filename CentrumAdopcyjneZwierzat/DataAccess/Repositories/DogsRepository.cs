@@ -51,6 +51,13 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             return changes > 0; // If changes > 0 = GOOD, else = NOT GOOD
         }
 
+        public Dog SaveDog(Dog dog)
+        {
+            var entryEntity = _context.Dogs.Add(dog);
+            _context.SaveChanges();
+            return entryEntity.Entity;
+        }
+
         public bool Update(Dog dog)
         {
             _context.Dogs.Update(dog);
