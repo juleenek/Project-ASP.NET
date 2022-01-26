@@ -8,5 +8,6 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts
 {
     public interface IVolunteerRepository : IRepositoryBase<Volunteer>
     {
+        Volunteer SaveVolunteer(Volunteer volunteer);
     }
 }

@@ -50,6 +50,13 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
             return changes > 0; 
         }
 
+        public Volunteer SaveVolunteer(Volunteer volunteer)
+        {
+            var entryEntity = _context.Volunteers.Add(volunteer);
+            _context.SaveChanges();
+            return entryEntity.Entity;
+        }
+
         public bool Update(Volunteer volunteer)
         {
             _context.Volunteers.Update(volunteer);
