@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fIWdvn9yiacQ3D38XNgHuQZo4OAKlsE8bKvJu893VAWZ+7U8JVMu4lMWh/kAA0OdXZ6scKK+U6b9dZ21RHGD5A==",
+  "dgSpecHash": "Iv0OVrcRf3fq6Hr4R2Kq4ZOvr+KsXDUmyd83w8uqyjXP2PSv15d1Jx84a7MzSW9LB3hWW/Xi6smjejQ8HrvzXA==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat\\CentrumAdopcyjneZwierzat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julialinek\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\diffengine\\6.4.9\\diffengine.6.4.9.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\emptyfiles\\2.3.3\\emptyfiles.2.3.3.nupkg.sha512",
+    "C:\\Users\\julialinek\\.nuget\\packages\\fakeiteasy\\7.3.0\\fakeiteasy.7.3.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\fluentassertions\\6.4.0\\fluentassertions.6.4.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

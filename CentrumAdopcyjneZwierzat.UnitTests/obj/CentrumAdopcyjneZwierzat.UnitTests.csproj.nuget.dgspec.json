@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -132,6 +136,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.4.0, )"

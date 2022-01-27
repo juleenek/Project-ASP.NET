@@ -16,12 +16,9 @@ namespace CentrumAdopcyjneZwierzat.Controllers
     public class DogsController : Controller
     {
         private IDogsRepository _repo;
-        private ApplicationDbContext _context;
-
-        public DogsController(IDogsRepository repo, ApplicationDbContext context)
+        public DogsController(IDogsRepository repo)
         {
             _repo = repo;
-            _context = context;
         }
 
         public ActionResult Dogs()

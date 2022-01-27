@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lCroRYwF9sEQH6cJZhkWdByNfhojWSzGqdsYSptbk7CMc/TVg2fkKNX3hdcsE1EYxJCZFW2SKnNDhMZXSo+IbA==",
+  "dgSpecHash": "f3mII1qID+VO/1nVBXvQXfAPnmWp6Q4jlSBUFDrqbY5t24bzpno2DSlIWG+EApeqJTJ/s3UEo5S755AIfOPYxQ==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\Zdjecia\\CentrumAdopcyjne\\CentrumAdopcyjneZwierzat.UnitTests\\CentrumAdopcyjneZwierzat.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\julialinek\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\diffengine\\6.4.9\\diffengine.6.4.9.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\emptyfiles\\2.3.3\\emptyfiles.2.3.3.nupkg.sha512",
+    "C:\\Users\\julialinek\\.nuget\\packages\\fakeiteasy\\7.3.0\\fakeiteasy.7.3.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\fluentassertions\\6.4.0\\fluentassertions.6.4.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\julialinek\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

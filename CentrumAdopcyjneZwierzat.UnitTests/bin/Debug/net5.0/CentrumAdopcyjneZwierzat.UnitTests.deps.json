@@ -9,6 +9,7 @@
       "CentrumAdopcyjneZwierzat.UnitTests/1.0.0": {
         "dependencies": {
           "CentrumAdopcyjneZwierzat": "1.0.0",
+          "FakeItEasy": "7.3.0",
           "FluentAssertions": "6.4.0",
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "Moq": "4.16.1",
@@ -59,6 +60,17 @@
           "lib/netstandard2.1/EmptyFiles.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FakeItEasy/7.3.0": {
+        "dependencies": {
+          "Castle.Core": "4.4.0"
+        },
+        "runtime": {
+          "lib/net5.0/FakeItEasy.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.3.0.0"
           }
         }
       },
@@ -2740,6 +2752,7 @@
       "xunit.runner.visualstudio/2.4.3": {},
       "CentrumAdopcyjneZwierzat/1.0.0": {
         "dependencies": {
+          "FakeItEasy": "7.3.0",
           "FluentAssertions": "6.4.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.10",
@@ -2788,6 +2801,13 @@
       "sha512": "sha512-I7L5UMvHYms1KAJr2lSeuC11p+rfAewSCwTAmxsR/LMKi4i9ld9s/91LuvJ1+FJnz9EaWvnOr8XX78M9Xo5H7Q==",
       "path": "emptyfiles/2.3.3",
       "hashPath": "emptyfiles.2.3.3.nupkg.sha512"
+    },
+    "FakeItEasy/7.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6yV0CYwjH0fDUw2Xxjo404BnYOdIxroNNakFWPdavuNlDhvgu6MHLMIwiE3I2dI2VhfqWowoUnzc7CVacq+fXA==",
+      "path": "fakeiteasy/7.3.0",
+      "hashPath": "fakeiteasy.7.3.0.nupkg.sha512"
     },
     "FluentAssertions/6.4.0": {
       "type": "package",

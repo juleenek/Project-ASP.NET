@@ -48,7 +48,7 @@ namespace CentrumAdopcyjneZwierzat.WebAPI_REST
             if (ModelState.IsValid)
             {
                 Dog dog = dogs.SaveDog(item);
-                return new CreatedResult($"/api/items/{dog.DogId}", dog);
+                return Ok(dog);
             }
             else
             {

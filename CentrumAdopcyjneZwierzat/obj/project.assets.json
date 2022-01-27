@@ -48,6 +48,18 @@
           "buildTransitive/EmptyFiles.targets": {}
         }
       },
+      "FakeItEasy/7.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "4.3.1"
+        },
+        "compile": {
+          "lib/net5.0/FakeItEasy.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FakeItEasy.dll": {}
+        }
+      },
       "FluentAssertions/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -3636,6 +3648,26 @@
         "lib/netstandard2.0/EmptyFiles.xml",
         "lib/netstandard2.1/EmptyFiles.dll",
         "lib/netstandard2.1/EmptyFiles.xml"
+      ]
+    },
+    "FakeItEasy/7.3.0": {
+      "sha512": "6yV0CYwjH0fDUw2Xxjo404BnYOdIxroNNakFWPdavuNlDhvgu6MHLMIwiE3I2dI2VhfqWowoUnzc7CVacq+fXA==",
+      "type": "package",
+      "path": "fakeiteasy/7.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fakeiteasy.7.3.0.nupkg.sha512",
+        "fakeiteasy.nuspec",
+        "images/FakeItEasy.png",
+        "lib/net45/FakeItEasy.dll",
+        "lib/net45/FakeItEasy.xml",
+        "lib/net5.0/FakeItEasy.dll",
+        "lib/net5.0/FakeItEasy.xml",
+        "lib/netstandard2.0/FakeItEasy.dll",
+        "lib/netstandard2.0/FakeItEasy.xml",
+        "lib/netstandard2.1/FakeItEasy.dll",
+        "lib/netstandard2.1/FakeItEasy.xml"
       ]
     },
     "FluentAssertions/6.4.0": {
@@ -11493,6 +11525,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FakeItEasy >= 7.3.0",
       "FluentAssertions >= 6.4.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.10",
@@ -11543,6 +11576,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FakeItEasy": {
+            "target": "Package",
+            "version": "[7.3.0, )"
+          },
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.4.0, )"

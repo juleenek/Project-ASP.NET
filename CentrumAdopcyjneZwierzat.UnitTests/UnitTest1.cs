@@ -10,11 +10,13 @@ using System.Threading.Tasks;
 using Xunit;
 using CentrumAdopcyjneZwierzat.WebAPI_REST;
 using FluentAssertions;
+using Microsoft.AspNetCore.Http;
 
 namespace CentrumAdopcyjneZwierzat.UnitTests.ControllerTests
 {
     public class UsersListControllerTests
     {
+
         [Fact]
         public void UsersListTest()
         {
@@ -32,29 +34,33 @@ namespace CentrumAdopcyjneZwierzat.UnitTests.ControllerTests
             resultController.Should().BeAssignableTo<IActionResult>();
         }
 
-        [Fact]
-        public void DetailsTest()
-        {
-            var mock = new Mock<IUsersListRepository>();
+        //[Fact]
+        //public void DeleteTest()
+        //{
+        //    var testUser = new ApplicationUser
+        //    {
+        //        Id = "123a",
+        //        FirstName = "Anna",
+        //        LastName = "Nowara",
+        //        Phone = "111222333",
+        //        StreetAddress = "Mirabelkowa 23",
+        //        PostalCode = "12-345",
+        //        City = "Kraków"
+        //    };
 
-            var user = new UsersListController(mock.Object);
+        //    repo.Add(testUser);
+        //    var createTest = repo.Add(testUser);
 
-            ApplicationUser expected = new ApplicationUser()
-            {
-                Id = "123a",
-                FirstName = "Anna",
-                LastName = "Nowara",
-                Phone = "111222333",
-                StreetAddress = "Mirabelkowa 23",
-                PostalCode = "12-345",
-                City = "Kraków"
-            };
+        //    Assert.True(createTest);
 
-            var actionResult = user.Details("123");
-            var viewResult = actionResult as ViewResult;
-            var actual = viewResult.ViewData.Model as ApplicationUser;
+        //    var test = repo.FindById(testUser.Id);
 
-            Assert.Equal(expected.Id, actual.Id);
-        }
+        //    Assert.NotNull(test);
+        //    Assert.IsAssignableFrom<IEnumerable<ApplicationUser>>(test);
+
+        //    var deleteTest = repo.Delete(test.Id);
+        //    Assert.True(deleteTest);
+        //}
+
     }
 }

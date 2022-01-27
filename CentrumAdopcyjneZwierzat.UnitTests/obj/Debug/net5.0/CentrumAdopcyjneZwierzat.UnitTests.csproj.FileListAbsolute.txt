@@ -308,3 +308,4 @@
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat.UnitTests\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.UnitTests.dll
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat.UnitTests\obj\Debug\net5.0\ref\CentrumAdopcyjneZwierzat.UnitTests.dll
 \\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat.UnitTests\obj\Debug\net5.0\CentrumAdopcyjneZwierzat.UnitTests.genruntimeconfig.cache
+\\Mac\Home\Desktop\Zdjecia\CentrumAdopcyjne\CentrumAdopcyjneZwierzat.UnitTests\bin\Debug\net5.0\FakeItEasy.dll
