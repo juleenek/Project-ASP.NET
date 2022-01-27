@@ -1,5 +1,6 @@
 ﻿using CentrumAdopcyjneZwierzat.DataAccess.Repositories.Contracts;
 using CentrumAdopcyjneZwierzat.Models.User;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,21 @@ namespace CentrumAdopcyjneZwierzat.DataAccess.Repositories
         {
             _context.ApplicationUsers.Add(item);
             return Save();
+        }
+        public async Task<IList<ApplicationUser>> List()
+        {
+            return await _context.ApplicationUsers
+                                     .OrderBy(c => c.UserName)
+                                     .Select(c => new ApplicationUser
+                                     {
+                                          FirstName =c.FirstName,
+                                          LastName = c.LastName,
+                                          Phone =c.Phone,
+                                          StreetAddress = c.StreetAddress,
+                                          PostalCode = c.PostalCode,
+                                          City = c.City
+                                        })
+                                     .ToListAsync();
         }
 
         public void AddVolunteerAsUser(string firstId, string secondId)
