@@ -6,26 +6,24 @@
 
 <table class="table">
 
-    @foreach (var item in @Model)
-    {
+
+    @foreach (var item in Model)
+     {
         <tr>
-            <td>@item.UserName</td>
-            <td>@item.Email</td>
             <td>
-                @*<a asp-controller="UsersList"
-                asp-action="Edit"
-                asp-route-id="@item.Id"
-                class="btn btn-primary">Edytuj</a>*@
-                <a asp-controller="UsersList"
-                   asp-action="Delete"
-                   asp-route-id="@item.Id"
-                   class="btn btn-danger">Usuń</a>
-                <a asp-controller="UsersList"
-                   asp-action="Details"
-                   asp-route-id="@item.Id"
-                   class="btn btn-primary">Szczegóły</a>
+                @Html.DisplayFor(modelItem => item.UserName)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+
+            <td>
+                 <a class="mr-1" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                 <a class="mr-1" asp-action="Delete" asp-route-id="@item.Id">Delete</a> 
+            </td>
+
+
         </tr>
-    }
+     }
 
 </table>
