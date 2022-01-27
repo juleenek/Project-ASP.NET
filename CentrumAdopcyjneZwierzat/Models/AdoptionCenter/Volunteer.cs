@@ -20,7 +20,10 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         public string VolunteerId { get; set; }
         public string VolunteerFirstName { get; set; }
         public string VolunteerLastName { get; set; }
+        [StringLength(11, ErrorMessage = "Pesel musi składać się z {1} znaków", MinimumLength = 11)]
         public string VolunteerPesel { get; set; }
+        [Required(ErrorMessage = "E-mail jest wymagany.")]
+        [EmailAddress(ErrorMessage = "Proszę wprowadzić e-mail w poprawnym formacie")]
         public string VolunteerEmail { get; set; }
         public string VolunteerPhone { get; set; }
         public Dog Dog { get; set; } // Jeden do wielu
