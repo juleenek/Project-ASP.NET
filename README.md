@@ -12,7 +12,8 @@ Centrum Adopcyjne Zwierząt - jest to projekt, wykonany na potrzebę zaliczenia 
 ```
 "ConnectionString": "DATA SOURCE=(nazwa serwera);Integrated Security=true;DATABASE=CentrumAdopcyjneZwierzat"
 ```
-- Wykonać instrukcje  *update-database* za pomocą **Package Manager Console** w zakładce *Tools > NuGet Package Menager > Package Menager Console*
+- Wykonać instrukcje  *update-database* za pomocą **Package Manager Console** w zakładce 
+    *Tools > NuGet Package Menager > Package Menager Console*
 - Uruchomić projekt
 
 ## Działanie aplikacji
