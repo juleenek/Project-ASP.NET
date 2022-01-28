@@ -17,6 +17,10 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         [DisplayName("Dogs Id")]
         public string DogId { get; set; }
         [DisplayName("Dogs Name")]
+        [StringLength(40, ErrorMessage = "Imię musi składać się przynajmniej z {2} znaków", MinimumLength = 3)]
+        [RegularExpression("[a-zA-Z-]*[^!@%~?:;#$%^&*()/\"0-9']*",
+        ErrorMessage = "Imię może składać się z wielkich i małych liter.")]
+        [Required(ErrorMessage = "Imię jest wymagane.")]
         public string DogName { get; set; }
         [DisplayName("Dogs Breed")]
         public Breed Breed { get; set; }
