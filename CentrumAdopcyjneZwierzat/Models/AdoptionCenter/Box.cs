@@ -26,8 +26,6 @@ namespace CentrumAdopcyjneZwierzat.Models.AdoptionCenter
         public string BoxName { get; set; }
         [Required(ErrorMessage = "Adres placówki jest wymagany.")]
         [StringLength(40, ErrorMessage = "Adres placówki musi składać się przynajmniej z {2} znaków", MinimumLength = 3)]
-        [RegularExpression("[a-zA-Z-]*[^!@%~?:;#$%^&*()/\"0-9']*",
-        ErrorMessage = "Adres placówki może składać się z wielkich i małych liter.")]
         [DisplayName("Adres")]
         public string BoxAddress { get; set; }
         public ICollection<Dog> Dogs { get; set; } // Jeden do wielu
